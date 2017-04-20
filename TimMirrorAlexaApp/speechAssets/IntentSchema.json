@@ -1,0 +1,88 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Item",
+          "type": "LIST_OF_ITEMS"
+        }
+      ],
+      "intent": "ShowMeLearningPathIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Item",
+          "type": "LIST_OF_ITEMS"
+        },
+        {
+          "name": "Color",
+          "type": "LIST_OF_COLORS"
+        }
+      ],
+      "intent": "HowmanyPassedIntent"
+    },
+    {
+      "intent": "SkillIntent",
+      "slots": [
+        {
+          "name": "skillName",
+          "type": "LIST_OF_SKILL_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "PersonIntent",
+      "slots": [
+        {
+          "name": "contactInfo",
+          "type": "LIST_OF_CONTACT_INFO"
+        },
+        {
+          "name": "name",
+          "type": "LIST_OF_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "TeamEventsIntent",
+      "slots": [
+        {
+          "name": "teamName",
+          "type": "LIST_OF_TEAM_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "TeamStructureIntent",
+      "slots": [
+        {
+          "name": "teamName",
+          "type": "LIST_OF_TEAM_NAME"
+        }
+      ]
+    },
+
+    {
+      "intent": "showDigitalTrendsIntent"
+    },
+    {
+      "intent": "PassYellowBadgeIntent"
+    },
+    {
+      "intent": "WhatKindsOfDtSupportIntent"
+    },
+    {
+      "intent": "HowToLearnDtIntent"
+    },
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.ResumeIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}

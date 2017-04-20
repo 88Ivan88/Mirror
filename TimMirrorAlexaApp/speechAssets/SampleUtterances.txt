@@ -1,0 +1,47 @@
+HowToLearnDtIntent How to learn digital technology
+WhatKindsOfDtSupportIntent what kinds of digital technologies support by the leaning model
+ShowMeLearningPathIntent show me the learning path for {Item}
+showDigitalTrendsIntent show me the digital technology trends
+
+
+showDigitalTrendsIntent show me the digital technology trends chart
+
+HowToLearnDtIntent how can I become digital talent
+
+WhatKindsOfDtSupportIntent What's the PI digital talent profile
+
+ShowMeLearningPathIntent show me the {Item} learning path 
+
+HowmanyPassedIntent How many associates passed the {Color} badge on {Item}
+
+PassYellowBadgeIntent show me the digital skills yellow badge coverage
+
+AMAZON.StopIntent stop
+
+AMAZON.StopIntent thanks
+
+AMAZON.StopIntent bye
+
+SkillIntent who is good at {skillName}
+SkillIntent who is good at {skillName} technology
+SkillIntent who's good at {skillName}
+SkillIntent who's good at {skillName} technology
+SkillIntent who learned the {skillName} recently
+SkillIntent who knows the {skillName}
+SkillIntent who knows the {skillName} technology
+SkillIntent who has been using the {skillName}
+SkillIntent who has been using the {skillName} technology
+
+
+PersonIntent what is the {contactInfo} of {name}
+PersonIntent do you know the {contactInfo} of {name}
+PersonIntent tell me the {contactInfo} of {name}
+
+TeamStructureIntent tell me the team structure of {teamName} team.
+TeamStructureIntent I want to know the team structure of {teamName} team.
+TeamStructureIntent may I know the team members of {teamName} team.
+TeamStructureIntent please tell me who are in the {teamName} team.
+
+TeamEventsIntent tell me the big events of {teamName} team.
+TeamEventsIntent I want to know the big events of {teamName} team.
+TeamEventsIntent may I know the big events of {teamName} team.
