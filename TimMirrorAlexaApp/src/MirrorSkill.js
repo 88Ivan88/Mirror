@@ -226,7 +226,12 @@ MirrorSkill.prototype.intentHandlers = {
                 speechOutput += items.PERSON_INFO_FOUND_WITHOUT_ITEM_NAME;
             }
             speechOutput += repromptSpeech;
-            response.ask(speechOutput,repromptSpeech);
+            iotDevice.setup(function(){
+                iotDevice.pubMessage('message', {'type': 'message', 'message': outputText}, function(){
+                    response.ask(speechOutput,repromptSpeech);
+                });
+            });
+           // response.ask(speechOutput,repromptSpeech);
         }
     },
     'PersonIntent': function (intent, session, response) {
@@ -256,7 +261,13 @@ MirrorSkill.prototype.intentHandlers = {
             speechOutput = "sorry, currently we don't have the record for this person.";
             repromptSpeech = items.PERSON_INFO_REPEAT_MESSAGE;
         }
-        response.ask(speechOutput,repromptSpeech);
+
+        iotDevice.setup(function(){
+            iotDevice.pubMessage('message', {'type': 'message', 'message': outputText}, function(){
+                response.ask(speechOutput,repromptSpeech);
+            });
+        });
+        //response.ask(speechOutput,repromptSpeech);
     },
     'TeamEventsIntent': function (intent, session, response) {
         var itemSlotTeamName = intent.slots.teamName;
@@ -279,7 +290,13 @@ MirrorSkill.prototype.intentHandlers = {
                 repromptSpeech = "Try saying repeat.";
             }
         }
-        response.ask(speechOutput, repromptSpeech);
+
+        iotDevice.setup(function(){
+            iotDevice.pubMessage('message', {'type': 'message', 'message': outputText}, function(){
+                response.ask(speechOutput,repromptSpeech);
+            });
+        });
+      //  response.ask(speechOutput, repromptSpeech);
     },
     'TeamStructureIntent': function (intent, session, response) {
         var itemSlotTeamName = intent.slots.teamName;
@@ -311,7 +328,13 @@ MirrorSkill.prototype.intentHandlers = {
                 repromptSpeech = "Try saying repeat."
             }
         }
-        response.ask(speechOutput, repromptSpeech);
+
+        iotDevice.setup(function(){
+            iotDevice.pubMessage('message', {'type': 'message', 'message': outputText}, function(){
+                response.ask(speechOutput,repromptSpeech);
+            });
+        });
+       // response.ask(speechOutput, repromptSpeech);
     },
 
     'AMAZON.HelpIntent': function (intent, session, response) {
